@@ -1,0 +1,143 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+@font-face {
+  font-family: 'KiwiMaru';
+  src: url('font/KiwiMaru-Regular.ttf') format('truetype');
+}
+
+h1, h2, h3, h4, p {
+  text-align: center;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+body {
+  color: #fff;
+  background: #c404d2;
+  font-family: 'KiwiMaru', sans-serif;
+}
+
+code {
+  background: #d6d6d6;
+  font-family: 'KiwiMaru', sans-serif;
+}
+
+img {
+  max-width: 300px;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.centered-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#senden {
+  font-size: 22px;
+  color: #ada;
+}
+
+.tweet-button {
+  background-color: #1DA1F2;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 10px;
+  text-align: center;
+  display: block;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.tweet-button:hover {
+  background-color: #0D8DD4;
+}
+
+.twitter-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.twitter-icon img {
+  width: 20px;
+}
+
+.speech-bubble {
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  z-index: 999;
+}
+
+.menu-button {
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.page-list {
+    position: fixed;
+    top: 0;
+    font-size: 12px;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #949494;
+    color: #fff;
+    transition: left 0.3s ease;
+}
+
+.page-list ul {
+    list-style: none;
+    padding: 15px;
+}
+
+.page-list ul li {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.page-list ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.page-list ul li a:hover {
+    color: #c404d2;
+    border-color: #c404d2;
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+    color: #000;
+    background-color: #e2e1ca;
+}
+
+.event {
+    margin-bottom: 20px;
+    text-decoration: underline; /* 下線を追加 */
+    text-decoration-color: #c404d2;
+    padding-left: 20px; /* 縦線とテキストの間隔を調整 */
+}
