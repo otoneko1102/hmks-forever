@@ -11,34 +11,12 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.appendChild(speechBubble);
 
     // ランダムなセリフのリスト
-    const phrases = [
-      "やあ",
-      "やぁ",
-      "yaa",
-      "コーラ無くなった",
-      "ポテチ",
-      "ポテトうま",
-      "🤔",
-      "🖕",
-      "ハムカスゥ",
-      "カス",
-      "草",
-      "火星から来た",
-      "ハムカスフォーエバーは不滅",
-      "kyonshi_subだよ",
-      "kyonshi_subは不滅",
-      "死んでね",
-      "どすえ",
-      "知らんけどすえ",
-      "なるほどすえ(京感)",
-      "舞子どすえ",
-      "迷子どすえ",
-      "人生狂った",
-      "さよなら",
-      "個人情報鯖のリンク→",
-      "今までありがとう"
-    ];
-
+    let phrases = [];
+    fetch('./hamutan.json')
+      .then(response => response.json())
+      .then(data => {
+        phrases = data.arr;
+      })
     // ランダムなセリフを選択
     const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
 
